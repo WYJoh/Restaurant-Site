@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+	<style>
+		img {
+			width: 200px;
+		}
+			body {
+			background-image: linear-gradient(#CDEDEA, #59D8CB);
+		}
+		h1 {
+			font-size: 5em;
+			text-align: center;
+			margin-bottom: 15px;
+			color: #05668D;
+		}
+		h2 {
+			font-size: 3.5em;
+			color: #101C41;
+		}
+		h1, h2 {
+			font-family: 'Arizonia', cursive;
+		}
+		h1, h2, h3 {
+			
+		}
+		.call_to_action {
+			/*color:# ;
+			background-color: # ;
+			padding: 5px;
+			margin: 20px;
+			text-decoration: ;*/
+		}
+		.nav_guide{
+			width: 700px;
+			margin: auto;
+			text-align: center;
+			font-size: 1.5em;
+			border-style: outset;
+			border-width: 5px;
+			background-color: #F0F3BD;
+			border-color: #ECEFA9;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.nav_guide li a{
+			color: #2F4858;
+			text-decoration: none;
+		}
+		.fish_left {
+			position: absolute;
+			left: 35px;
+			top: 30px;
+		}
+		.fish_right {
+			transform: ScaleX(-1);
+			position: absolute;
+			right: 35px;
+			top: 30px;
+		}
+		form {
+			font-size: 1.4em;
+			line-height: 1.5em;
+			text-align: center;
+			margin:auto;
+			width: 500px;
+			height: 515px;
+			border-style: solid;
+			border-color: #101C41;
+			border-radius: 1em;
+			border-width: 2px;
+			background-color: #F0F3BD;
+			font-family: 'Quicksand', sans-serif;
+		}
+		label {
+			color: #101C41;
+		}
+		input, textarea {
+			font-family: 'Quicksand', sans-serif;
+		}
+		button {
+			background-color: #D85A66;
+			font-family: 'Quicksand', sans-serif;
+			border-radius: 1em;
+			font-size: 0.8em;
+			border-style: outset;
+		}
+	</style>
+</head>
+<body>
+	<h1>Johnson's Seafood Shack</h1>
+
+	<img class="fish_left" src="https://www.jing.fm/clipimg/full/28-280028_fish-png-images-transparent-pictures-cartoon-fish-transparent.png" alt="Blue Fish">
+	<img class="fish_right" src="https://www.jing.fm/clipimg/full/28-280028_fish-png-images-transparent-pictures-cartoon-fish-transparent.png" alt="Blue Fish">
+
+	<ul class="nav_guide" style="list-style-type: none">
+		<li><a href="index.html">Menu</a>
+		</li>
+		<li><a href="contact.html">Contact Us</a>
+		</li>
+	</ul>
+
+	<h2>~ Contact Us ~</h2>
+	
+		<form method="POST" action="https://webhook.site/0b726ff4-ffaa-4d39-a4c9-461766cf0aac">
+			<label for="first_name">First Name</label>
+			<br>
+			<input type="text" name="first_name" placeholder="John" required />
+			<br>
+
+			<label for="last_name">Last Name</label>
+			<br>
+			<input type="text" name="last_name" placeholder="Smith" required />
+			<br>
+
+			<label for="email">Email Address</label>
+			<br>
+			<input type="email" name="email" id="email" placeholder="you@email.com" required />
+			<br>
+
+			<label for="phone">Phone</label>
+			<br>
+			<input type="tel" name="phone" id="phone" placeholder="123-456-7890" required />
+			<br>
+
+			<label for="message">Message</label>
+			<br>
+			<textarea name="message" id="message" cols="30" rows="10" placeholder="How can we help you?"></textarea>
+			<br>
+
+			<button>Submit</button>
+		</form>
+	</body>
+	</html>

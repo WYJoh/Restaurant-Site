@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+	<style>
+		img {
+			width: 200px;
+		}
+			body {
+			background-image: linear-gradient(#CDEDEA, #59D8CB);
+		}
+		h1 {
+			font-size: 5em;
+			text-align: center;
+			margin-bottom: 15px;
+			color: #05668D;
+		}
+		h2 {
+			font-size: 3.5em;
+			line-height: 50px;
+		}
+		h3 {
+			font-size: 1.5em;
+			font-family: 'Quicksand', sans-serif;
+			text-align: center;
+			border-style: solid;
+			border-color: #101C41;
+			border-radius: 1em;
+			border-width: 2px;
+			background-color: #F0F3BD;
+		}
+		h1, h2 {
+			font-family: 'Arizonia', cursive;
+		}
+		h2, h3 {
+			color: #101C41;
+		}
+		td {
+			padding: 5px;
+		}
+		.cart_checkout {
+			width: 40px;
+			position: fixed;
+			z-index: 100;
+			top: 5px;
+			right: 5px;
+			border-style: outset;
+			border-radius: 1em;
+			border-color: #ECEFA9;
+			border-width: 2px;
+			padding: 5px;
+			background-color: #D85A66;
+		}
+		.food_description {
+			font-size: 1.2em;
+			font-family: 'Quicksand', sans-serif;
+			text-align: left;
+			color: #101C41;
+		}
+		.call_to_action {
+			color: #black;
+			background-color: #D85A66;
+			padding: 5px;
+			margin: 10px;
+			border-width: 2px;
+			text-decoration: underline;
+			border-style: outset;
+			font-family: 'Quicksand', sans-serif;
+			text-decoration: none;
+			font-size: 0.7em;
+			border-radius: 1em;
+			border-color: #ECEFA9;
+		}
+		.nav_guide{
+			width: 700px;
+			margin: auto;
+			text-align: center;
+			font-size: 1.5em;
+			border-style: outset;
+			border-width: 5px;
+			background-color: #F0F3BD;
+			border-color: #ECEFA9;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.nav_guide li a{
+			color: #2F4858;
+			text-decoration: none;
+		}
+		.classic_sampler, .fried_calamari, .fried_shrimp, .mahi_mahi, .stuffed_flounder, .crab_cake, .key_lime, .chocolate_mousse {
+			width: 350px;
+			height: 250px;
+			border-style: outset;
+			border-color: #ECEFA9;
+		}
+		.cs_dip, .lobster_tails {
+			width: 220px;
+			height: 250px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			border-style: outset;
+			border-color: #ECEFA9;
+		}
+		.fish_left {
+			position: absolute;
+			left: 35px;
+			top: 30px;
+		}
+		.fish_right {
+			transform: ScaleX(-1);
+			position: absolute;
+			right: 35px;
+			top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Johnson's Seafood Shack</h1>
+
+		<a href="checkout.html">
+			<img class="cart_checkout" alt="Cart" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png">
+		</a>
+
+		<img class="fish_left" src="https://www.jing.fm/clipimg/full/28-280028_fish-png-images-transparent-pictures-cartoon-fish-transparent.png" alt="Blue Fish">
+		<img class="fish_right" src="https://www.jing.fm/clipimg/full/28-280028_fish-png-images-transparent-pictures-cartoon-fish-transparent.png" alt="Blue Fish">
+	</header>
+	
+	<ul class="nav_guide" style="list-style-type: none">
+		<li><a href="index.html">Menu</a>
+		</li>
+		<li><a href="contact.html">Contact Us</a>
+		</li>
+	</ul>
+
+	<h2>~ Appetizers ~</h2>
+
+	<table>
+		<tr>
+			<td>
+				<h3>Classic Sampler</h3>
+				<img class="classic_sampler" src="https://media-cdn.tripadvisor.com/media/photo-s/19/09/4c/01/joes-classic-sampler.jpg" alt="Classic Sampler">
+			</td>
+			<td>
+				<p class="food_description">
+					Crab and shrimp dip, hush puppies and calamari <i>16.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+			<td>
+				<h3>Fried Calamari</h3>
+				<img class="fried_calamari" src="https://thecozyapron.com/wp-content/uploads/2019/12/fried-calamari_thecozyapron_1.jpg" alt="Fried Calamari">
+			</td>
+			<td>
+				<p class="food_description">
+					With marinara <i>10.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Crab and Shrimp Dip</h3>
+				<img class="cs_dip" src="https://i.pinimg.com/originals/37/d1/08/37d108e3cc81284e2cd6bc23ec7e22ef.jpg" alt="Crab and Shrimp Dip">
+			</td>
+			<td>
+				<p class="food_description">
+					With crab meat, shrimp, cream cheese and veggies <i>10.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+			<td>
+				<h3>Fried Shrimp Basket</h3>
+				<img class="fried_shrimp" src="https://blog.apartmentsathighpoint.com/wp-content/uploads/2019/08/friend-shrimp-basket.jpg" alt="Fried Shrimp Basket">
+			</td>
+			<td>
+				<p class="food_description">
+					1/2 pound, served hot or cold <i>11.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+		</tr>
+	</table>
+
+	<h2>~ Entrees ~</h2>
+
+	<table>
+		<tr>
+			<td>
+				<h3>Mahi Mahi Sandwich</h3>
+				<img class="mahi_mahi" src="https://asassyspoon.com/wp-content/uploads/2017/02/blackened-mahi-mahi-sandwich4-2.jpg" alt="Mahi Mahi Sandwich">
+			</td>
+			<td>
+				<p class="food_description">
+					Blackened, with cajun remoulade, lettuce, tomato and French fries <i>15.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+			<td>
+				<h3>Stuffed Flounder</h3>
+				<img class="stuffed_flounder" src="https://www.askchefdennis.com/wp-content/uploads/2011/06/stuffed-flounder.jpg" alt="Stuffed Flounder">
+			</td>
+			<td>
+				<p class="food_description">
+					Flounder filled with a crab stuffing and a side of corn on the cob <i>20.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Lobster Tails</h3>
+				<img class="lobster_tails" src="https://cdn.shopify.com/s/files/1/2530/7762/products/broiled-spiny-lobster-tails-0016_x750.jpg?v=1571713017" alt="Lobster Tails">
+			</td>
+			<td>
+				<p class="food_description">
+					Four lobster tails, with seasonal vegetables <i>18.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+			<td>
+				<h3>Crab Cake Sandwich</h3>
+				<img class="crab_cake" src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2016/3/15/0/CCFAM105H_Crab-Cake-on-Brioche-with-Pickled-Cabbage_s4x3.jpg.rend.hgtvcom.826.620.suffix/1458059870276.jpeg" alt="Crab Cake Sandwich">
+			</td>
+			<td>
+				<p class="food_description">
+					Scratch made with lump crab, lettuce, onions and remoulade sauce <i>13.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+		</tr>
+	</table>
+
+	<h2>~ Desserts ~</h2>
+
+	<table>
+		<tr>
+			<td>
+				<h3>Key Lime Pie</h3>
+				<img class="key_lime" src="https://www.favfamilyrecipes.com/wp-content/uploads/2019/05/Key-Lime-Pie-500x375.jpg" alt="Key Lime Pie">
+			</td>
+			<td>
+				<p class="food_description">
+					Topped with whipped cream, lime slice <i>8.49</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+			<td>
+				<h3>Triple-Chocolate Mousse</h3>
+				<img class="chocolate_mousse" src="https://petitworldcitizen.files.wordpress.com/2013/12/mousse-cake-2.jpg" alt="Chocolate Mousse">
+			</td>
+			<td>
+				<p class="food_description">
+					Topped with shaved chocolate <i>9.99</i>
+				</p>
+				<a href="checkout.html" class="call_to_action">Add to Cart</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
